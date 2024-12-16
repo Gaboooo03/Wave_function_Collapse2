@@ -4,81 +4,135 @@ let ancho;
 let alto;
 
 const azulejos = [];
-const numA = 11; // número de azulejos
+const numA = 20; // número de azulejos
 
 const reglas = [
   // Reglas de los bordes de cada azulejo
   {
-    UP: 1,
-    RIGHT: 0,
-    DOWN: 1,
-    LEFT: 1,
-  },
-  {
-    UP: 0,
-    RIGHT: 1,
-    DOWN: 1,
-    LEFT: 0,
-  },
-  {
-    UP: 1,
-    RIGHT: 0,
-    DOWN: 1,
-    LEFT: 0,
-  },
-  {
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 1,
-  },
-  {
-    UP: 1,
-    RIGHT: 1,
-    DOWN: 1,
-    LEFT: 0,
-  },
-  {
-    UP: 0,
-    RIGHT: 1,
-    DOWN: 0,
-    LEFT: 1,
-  },
-  {
-    UP: 0,
-    RIGHT: 0,
-    DOWN: 1,
-    LEFT: 1,
-  },
-  {
     UP: 0,
     RIGHT: 1,
     DOWN: 0,
     LEFT: 0,
   },
   {
-    UP: 1,
+    UP: 0,
     RIGHT: 1,
-    DOWN: 1,
-    LEFT: 1,
+    DOWN: 3,
+    LEFT: 2,
+  },
+  {
+    UP: 0,
+    RIGHT: 0,
+    DOWN: 6,
+    LEFT: 4,
+  },
+  {
+    UP: 0,
+    RIGHT: 0,
+    DOWN: 6,
+    LEFT: 0,
+  },
+  {
+    UP: 0,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 0,
   },
   {
     UP: 0,
     RIGHT: 1,
     DOWN: 0,
-    LEFT: 1,
+    LEFT: 3,
   },
   {
-    UP: 1,
+    UP: 7,
+    RIGHT: 0,
+    DOWN: 7,
+    LEFT: 0,
+  },
+  {
+    UP: 7,
+    RIGHT: 0,
+    DOWN: 7,
+    LEFT: 0,
+  },
+  {
+    UP: 3,
+    RIGHT: 3,
+    DOWN: 0,
+    LEFT: 0,
+  },
+  {
+    UP: 0,
+    RIGHT: 7,
+    DOWN: 0,
+    LEFT: 7,
+  },
+  {
+    UP: 6,
     RIGHT: 0,
     DOWN: 0,
-    LEFT: 1,
+    LEFT: 2,
+  },
+  {
+    UP: 7,
+    RIGHT: 0,
+    DOWN: 7,
+    LEFT: 0,
+  },
+  {
+    UP: 7,
+    RIGHT: 0,
+    DOWN: 7,
+    LEFT: 0,
+  },
+  {
+    UP: 0,
+    RIGHT: 0,
+    DOWN: 4,
+    LEFT: 0,
+  },
+  {
+    UP: 0,
+    RIGHT: 3,
+    DOWN: 5,
+    LEFT: 0,
+  },
+  {
+    UP: 0,
+    RIGHT: 7,
+    DOWN: 0,
+    LEFT: 7,
+  },
+  {
+    UP: 6,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 2,
+  },
+  {
+    UP: 4,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 0,
+  },
+  {
+    UP: 4,
+    RIGHT: 1,
+    DOWN: 6,
+    LEFT: 0,
+  },
+  {
+    UP: 6,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 2,
   },
 ];
 
 function preload() {
   for (let i = 0; i < numA; i++) {
-    azulejos[i] = loadImage("tiles/tile" + i + ".png");
+    azulejos[i] = loadImage("newTiles/tile" + i + ".png");
   }
 }
 
